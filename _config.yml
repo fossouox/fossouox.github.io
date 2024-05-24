@@ -1,11 +1,11 @@
 title: Mon Portfolio
-email: monemail@example.com
+email: fossouox@github.com
 description: > # this means to ignore newlines until "baseurl:"
   Ce site présente mes projets et mon parcours.
 baseurl: "" # le sous-chemin de votre site, e.g. /blog
-url: "https://votre_nom_utilisateur.github.io" # l'URL de votre site
-twitter_username: votre_nom_twitter
-github_username:  votre_nom_utilisateur
+url: "https://fossouox.github.io" # l'URL de votre site
+twitter_username:Mon_nom_twitter
+github_username:  Mon_nom_utilisateur
 
 # Build settings
 theme: minima
