@@ -1,27 +1,18 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mon Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <header>
-        <h1>Bienvenue sur mon portfolio</h1>
-    </header>
-    <main>
-        <section>
-            <h2>À propos de moi</h2>
-            <p>Voici quelques informations sur moi...</p>
-        </section>
-        <section>
-            <h2>Mes projets</h2>
-            <p>Voici une liste de mes projets...</p>
-        </section>
-    </main>
-    <footer>
-        <p>Contact: monemail@example.com</p>
-    </footer>
-</body>
-</html>
+---
+layout: default
+---
+
+<div class="posts">
+  {% for post in site.posts %}
+    <article class="post">
+
+      <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
+
+      <div class="entry">
+        {{ post.excerpt }}
+      </div>
+
+      <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
+    </article>
+  {% endfor %}
+</div>
